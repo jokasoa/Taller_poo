@@ -1,0 +1,36 @@
+
+1. ¿Qué ventajas observas en la versión orientada a objetos?
+
+La versión orientada a objetos permite organizar mejor el código separando la lógica en clases independientes. Cada producto tiene su propia estructura y comportamiento, lo que hace que el código sea más modular y fácil de ampliar. Además, la reutilización aumenta porque la clase Producto puede usarse en otros programas sin necesidad de reescribir código. También facilita el mantenimiento, ya que cualquier cambio en los atributos o métodos de un producto se hace en un solo lugar.
+
+2. ¿Qué parte del código resultó más clara o fácil de mantener?
+
+La parte más clara es la clase Producto. Al encapsular los atributos y métodos dentro de esa clase, el código principal (TiendaApp) queda más limpio y solo se encarga de usar los objetos. Esto evita tener variables sueltas o cálculos repetidos. Los métodos calcularTotal() y mostrarInfo() también son fáciles de identificar, entender y modificar sin afectar al resto del programa.
+
+3. ¿Cómo podrías extender el programa para manejar más productos?
+
+Para manejar más productos, se podría:
+
+Cambiar el tamaño del arreglo Producto[] o utilizar una colección dinámica como ArrayList<Producto>.
+
+Agregar un menú donde el usuario decida cuántos productos desea ingresar.
+
+Implementar validaciones para asegurar que los datos sean correctos.
+
+Permitir agregar productos de forma indefinida hasta que el usuario escriba “salir”.
+
+Con estos cambios, el programa sería más flexible y escalable.
+
+4. ¿Podrías agregar una clase Tienda que contenga los productos y calcule el total?
+
+Sí, es totalmente posible. Se podría crear una clase Tienda que tenga:
+
+Un atributo ArrayList<Producto> o arreglo.
+
+Un método agregarProducto(Producto p).
+
+Un método calcularTotalGeneral().
+
+Un método mostrarInventario().
+
+De esta forma, TiendaApp solo se encargaría de interactuar con el usuario, mientras que la clase Tienda manejaría toda la lógica del inventario, haciendo el diseño más ordenado y orientado a objetos.
